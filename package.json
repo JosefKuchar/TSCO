@@ -1,7 +1,7 @@
 {
   "name": "tsco",
   "version": "1.0.0",
-  "description": "The Struggle for Catan Online is online version of catan card game",
+  "description": "The Struggle for Catan Online is online version of Catan card game",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
