@@ -1,0 +1,22 @@
+body{
+    font-family: 'Open Sans';
+}
+
+.resource{
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+.resources{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.direction{
+    font-size: 8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}

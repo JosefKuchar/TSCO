@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    
+    <template id="resource-template">
+        <span class="resource">
+            <span class="name">{{ name }}: </span>
+            <span class="amount">{{ amount }}</span>
+        </span>
+    </template>
+    
+    <template id="direction-template">
+        <span class="direction fa fa-refresh" :class="classString" aria-hidden="true"></span>
+    </template>
+
+    <template id="user-template">
+        <div>{{ name }}
+            <li v-for="special in specials">
+                <special :name="special"></special>
+            </li>
+        </div>
+    </template>
+
+    <template id="special-template">
+        <div>{{ name }}</div>
+    </template>
+
+    <div id="app">
+        <div class="resources">
+            <resource name="Wood" :amount="0"></resource>
+            <resource name="Whool" :amount="0"></resource>
+            <resource name="Brick" :amount="0"></resource>
+            <resource name="Wheet" :amount="0"></resource>
+            <resource name="Ore" :amount="0"></resource>
+        </div>
+        <direction></direction>
+
+        <user name="Test #1"></user>
+    </div>
+</body>
+</html>
