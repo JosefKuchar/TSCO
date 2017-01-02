@@ -1,0 +1,54 @@
+body{
+    font-family: 'Open Sans';
+}
+
+.resource{
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+.resources{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.direction{
+    font-size: 8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+
+.login-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-backface-visibility: hidden;
+    z-index: 6;
+}
+
+#login-text{
+    display: block;
+}
+
+.login-form label{
+    font-size: 3em;
+}
+
+.blackout{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: #CCC;
+    opacity: 0.6;
+}
+
+.hidden{
+    display: none;
+}
